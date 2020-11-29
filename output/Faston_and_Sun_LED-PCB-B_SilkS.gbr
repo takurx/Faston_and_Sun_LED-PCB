@@ -1,0 +1,15 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,5.1.8-db9833491~87~ubuntu20.04.1*%
+%TF.CreationDate,2020-11-29T22:55:04+09:00*%
+%TF.ProjectId,Faston_and_Sun_LED-PCB,46617374-6f6e-45f6-916e-645f53756e5f,V1.0.1*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Legend,Bot*%
+%TF.FilePolarity,Positive*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 5.1.8-db9833491~87~ubuntu20.04.1) date 2020-11-29 22:55:04*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 APERTURE END LIST*
+M02*
