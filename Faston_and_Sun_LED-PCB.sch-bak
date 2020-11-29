@@ -1,0 +1,133 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Barrel_Jack_Switch J?
+U 1 1 5FC36EE0
+P 3500 2700
+F 0 "J?" H 3557 3017 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 3557 2926 50  0000 C CNN
+F 2 "" H 3550 2660 50  0001 C CNN
+F 3 "~" H 3550 2660 50  0001 C CNN
+	1    3500 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5FC37870
+P 7100 2250
+F 0 "D?" V 7139 2132 50  0000 R CNN
+F 1 "LED" V 7048 2132 50  0000 R CNN
+F 2 "" H 7100 2250 50  0001 C CNN
+F 3 "~" H 7100 2250 50  0001 C CNN
+	1    7100 2250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 5FC385B9
+P 4450 2600
+F 0 "J?" H 4478 2576 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 4478 2485 50  0000 L CNN
+F 2 "" H 4450 2600 50  0001 C CNN
+F 3 "~" H 4450 2600 50  0001 C CNN
+	1    4450 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FC38EE3
+P 7700 3550
+F 0 "R?" H 7770 3596 50  0000 L CNN
+F 1 "R" H 7770 3505 50  0000 L CNN
+F 2 "" V 7630 3550 50  0001 C CNN
+F 3 "~" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L add_lib6:NSI45060JDT4G U?
+U 1 1 5FC398D4
+P 7100 3200
+F 0 "U?" H 6870 3246 50  0000 R CNN
+F 1 "NSI45060JDT4G" H 6870 3155 50  0000 R CNN
+F 2 "SOT229P991X238-4N" H 7100 3200 50  0001 L BNN
+F 3 "" H 7100 3200 50  0001 L BNN
+F 4 "ON Semiconductor" H 7100 3200 50  0001 L BNN "MANUFACTURER"
+	1    7100 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L add_lib5:62409-1 J?
+U 1 1 5FC3AEB3
+P 5550 2650
+F 0 "J?" H 5443 2283 50  0000 C CNN
+F 1 "62409-1" H 5443 2374 50  0000 C CNN
+F 2 "TE_62409-1" H 5550 2650 50  0001 L BNN
+F 3 "" H 5550 2650 50  0001 L BNN
+F 4 "62409-1" H 5550 2650 50  0001 L BNN "Comment"
+F 5 "Compliant" H 5550 2650 50  0001 L BNN "EU_RoHS_Compliance"
+	1    5550 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L add_lib5:62409-1 J?
+U 1 1 5FC3BA6E
+P 5550 3300
+F 0 "J?" H 5443 2933 50  0000 C CNN
+F 1 "62409-1" H 5443 3024 50  0000 C CNN
+F 2 "TE_62409-1" H 5550 3300 50  0001 L BNN
+F 3 "" H 5550 3300 50  0001 L BNN
+F 4 "62409-1" H 5550 3300 50  0001 L BNN "Comment"
+F 5 "Compliant" H 5550 3300 50  0001 L BNN "EU_RoHS_Compliance"
+	1    5550 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FC3F2C1
+P 6500 3900
+F 0 "#PWR?" H 6500 3650 50  0001 C CNN
+F 1 "GND" H 6505 3727 50  0000 C CNN
+F 2 "" H 6500 3900 50  0001 C CNN
+F 3 "" H 6500 3900 50  0001 C CNN
+	1    6500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5FC3F934
+P 6650 1950
+F 0 "#PWR?" H 6650 1800 50  0001 C CNN
+F 1 "VCC" H 6665 2123 50  0000 C CNN
+F 2 "" H 6650 1950 50  0001 C CNN
+F 3 "" H 6650 1950 50  0001 C CNN
+	1    6650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 2600 3800 2600
+Wire Wire Line
+	3800 2800 3950 2800
+Wire Wire Line
+	4250 2800 4250 2700
+Wire Wire Line
+	3800 2700 3950 2700
+Wire Wire Line
+	3950 2700 3950 2800
+Connection ~ 3950 2800
+Wire Wire Line
+	3950 2800 4250 2800
+$EndSCHEMATC
