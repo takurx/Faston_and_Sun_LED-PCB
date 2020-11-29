@@ -4,11 +4,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Faston terminal and Blink Sun right like LED"
+Date "2020-11-29"
+Rev "V1.0.0"
+Comp "Geekhouse Tsukuba's Tomori Nao"
+Comment1 "Presented by takurx"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -19,7 +19,7 @@ U 1 1 5FC36EE0
 P 3500 2700
 F 0 "J1" H 3557 3017 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 3557 2926 50  0000 C CNN
-F 2 "" H 3550 2660 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 3550 2660 50  0001 C CNN
 F 3 "~" H 3550 2660 50  0001 C CNN
 	1    3500 2700
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 5FC37870
 P 7100 2250
 F 0 "D1" V 7139 2132 50  0000 R CNN
 F 1 "LED" V 7048 2132 50  0000 R CNN
-F 2 "" H 7100 2250 50  0001 C CNN
+F 2 "CRD_Sun_LED:ENB01-NHSD7-F1" H 7100 2250 50  0001 C CNN
 F 3 "~" H 7100 2250 50  0001 C CNN
 	1    7100 2250
 	0    -1   -1   0   
@@ -41,7 +41,7 @@ U 1 1 5FC385B9
 P 4450 2600
 F 0 "J2" H 4478 2576 50  0000 L CNN
 F 1 "Conn_01x02_Female" H 4478 2485 50  0000 L CNN
-F 2 "" H 4450 2600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4450 2600 50  0001 C CNN
 F 3 "~" H 4450 2600 50  0001 C CNN
 	1    4450 2600
 	1    0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 5FC38EE3
 P 7700 3550
 F 0 "R1" H 7770 3596 50  0000 L CNN
 F 1 "R" H 7770 3505 50  0000 L CNN
-F 2 "" V 7630 3550 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 7630 3550 50  0001 C CNN
 F 3 "~" H 7700 3550 50  0001 C CNN
 	1    7700 3550
 	1    0    0    -1  
@@ -118,8 +118,6 @@ F 3 "" H 6650 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 2600 3800 2600
-Wire Wire Line
 	3800 2800 3950 2800
 Wire Wire Line
 	4250 2800 4250 2700
@@ -128,8 +126,6 @@ Wire Wire Line
 Wire Wire Line
 	3950 2700 3950 2800
 Connection ~ 3950 2800
-Wire Wire Line
-	3950 2800 4250 2800
 Wire Wire Line
 	7100 2100 6650 2100
 Wire Wire Line
@@ -157,4 +153,8 @@ Wire Wire Line
 Wire Wire Line
 	7700 3700 7100 3700
 Connection ~ 7100 3700
+Wire Wire Line
+	3950 2800 4250 2800
+Wire Wire Line
+	3800 2600 4250 2600
 $EndSCHEMATC
